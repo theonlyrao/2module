@@ -28,7 +28,7 @@ date: 2015-11-25
 ---
 ```
 
-Delete the filler content in the file and replace it with the text for your blog post. 
+Delete the filler content in the file and replace it with the text for your blog post. You can create more post files using the `yyyy-mm-dd-post-title.html` format. **Posts with dates in the future will not show up.**
 
 * `_includes` contains the `header.html` and `footer.html` for your page. You might want to consider adding a navbar inside of the header, and contact info inside of the footer. Notice that the tags in the footer close those in the header. The bit `{{ site.title }}` inside of `header.html` comes from the `_config.yml` file. If you'd like to change the title, change it inside the config file. 
 
