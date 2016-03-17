@@ -2,8 +2,17 @@
 layout: default
 ---
 
+<div id="about">
+<h2>About</h2>
+<p>
+Here's where all the stuff about me would go.
+</p>
+</div>
+
+<div id="post-preview"
 {% for post in site.posts %}
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
   <h4>{{ post.date | date: "%m-%d-%Y" }}</h4>
   <p>{{ post.content | strip_html | truncatewords:10}}</p>
 {% endfor %}
+</div>

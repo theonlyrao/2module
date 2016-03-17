@@ -1,3 +1,58 @@
+#fixed-header {
+  background-color: rgba(43, 58, 66, 1);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  margin: 0px;
+  width: 100%
+}
+
+#nav {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: : rgba(189, 212, 222, 1);
+}
+
+#title {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: : rgba(63, 87, 101, 1);
+}
+
+#title a:link {
+  color: rgba(63, 87, 101, 1);
+}
+
+#title a:active {
+  color: rgba(63, 87, 101, 1);
+}
+
+body {
+  position: relative;
+  top: 150px;
+  background-color: rgba(189, 212, 222, 1);
+}
+
 #kitten {
   height: 100px;
+}
+
+p {
+  font-family: 'Gentium Basic', serif;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+li {
+  display: inline;
+  padding: 5px;
+}
+
+#about {
+  background-color: rgba(239, 239, 239, 1)
+}
+
+#post-preview {
+  background-color: rgba(239, 239, 239, 1)
 }
