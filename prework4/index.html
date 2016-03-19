@@ -4,15 +4,14 @@ layout: default
 
 <div id="about">
 <h2>About</h2>
-<p>
-Here's where all the stuff about me would go.
-</p>
+<p><img src='./portrait.jpg' alt="Ashwin's portrait" />Second Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquam mollis vestibulum. Nulla mattis nisi et ante rhoncus, eget faucibus dui vulputate. Vestibulum cursus turpis sed bibendum ullamcorper. Duis viverra suscipit nibh vitae vehicula. Donec ligula urna, eleifend et ex ut, bibendum malesuada mi. Proin eu consectetur nunc, a feugiat purus. Duis lobortis aliquam diam, sed ultricies lectus blandit sed. Pellentesque vel nisl non odio condimentum hendrerit. Nam volutpat ultrices felis, eu feugiat massa lacinia at. In eleifend placerat ex in gravida. Quisque id sem vitae erat interdum sodales ut sit amet nibh. Donec porta laoreet elit, eget molestie erat efficitur vehicula. Donec eleifend posuere malesuada. Suspendisse porta sed neque in sodales.</p>
 </div>
 
-<div id="post-preview"
+<div id="post-preview">
 {% for post in site.posts %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <h4>{{ post.date | date: "%m-%d-%Y" }}</h4>
-  <p>{{ post.content | strip_html | truncatewords:10}}</p>
+  <div id="one-post-preview">
+    <h3 class='post-title'>{{ post.title }}</h3>
+    <p><strong>{{ post.date | date: "%m-%d-%Y" }}:</strong> {{ post.content | strip_html | truncatewords:50}}<br><a href="{{ post.url }}";>Keep reading</a></p>
+  </div>
 {% endfor %}
 </div>
