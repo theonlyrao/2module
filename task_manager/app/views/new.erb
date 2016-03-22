@@ -1,19 +1,11 @@
 <div class="col-md-12">
 
-  <div class="row">
-    <a class="btn btn-info col-md-3" href="/" role="button">Dashboard</a>
-    <a class="btn btn-default col-md-3" href="/tasks" role="button">Task Index</a>
-  </div>
-
   <form action="/tasks" method="post">
     <h1>Enter a new task:</h1>
     <div class="form-group">
       <input type='task' class="form-control" name='task[title]' placeholder="Task Title"/><br/>
     </div>
-
-    <!-- <div class="form-group"> -->
-      <textarea class="form-control" rows="4" name='task[description]' placeholder="Task Description"></textarea></br/>
-    <!-- </div> -->
+    <textarea class="form-control" rows="4" name='task[description]' placeholder="Task Description"></textarea></br/>
     <input type='submit' />
   </form>
 
