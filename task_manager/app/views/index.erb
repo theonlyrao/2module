@@ -1,4 +1,22 @@
-<h1>All Tasks</h1>
- <% @tasks.each do |task| %>
-  <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
- <% end %>
+<div class="col-md-12">
+
+  <div class="row">
+    <a class="btn btn-info col-md-3" href="/" role="button">Dashboard</a>
+  </div>
+
+  <div class="row">
+    <h1>All Tasks</h1>
+      <table class="table">
+        <tr>
+          <th>Task ID</th>
+          <th>Task Title</th>
+        </tr>
+        <tr>
+         <% @tasks.each do |task| %>
+            <td><%= task.id %>:</td>
+            <td> <a href="/tasks/<%= task.id %>"><%= task.title %></a></td>
+        </tr>
+       <% end %>
+     </table>
+   </div>
+ </div>

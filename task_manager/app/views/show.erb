@@ -1,5 +1,16 @@
-<a href="/tasks">Task Index</a>
+<div class="col-md-12">
 
-<h1><%= @task.title %></h1>
+  <div class="row">
+    <a class="btn btn-info col-md-3" href="/" role="button">Dashboard</a>
+    <a class="btn btn-default col-md-3" href="/tasks" role="button">Task Index</a>
+  </div>
 
-<p><%= @task.description %></p>
+  <div class="row">
+    <h1><%= @task.title %></h1>
+  </div>
+
+  <div class="row">
+    <p><%= @task.description %></p>
+  </div>
+
+</div>
