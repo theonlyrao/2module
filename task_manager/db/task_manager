@@ -3,4 +3,4 @@ tasks:
 - id: 1
   title: first task has been edited
   description: first of all pizza is good
-total: 2
+total: 3
