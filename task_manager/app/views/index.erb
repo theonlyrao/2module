@@ -10,8 +10,8 @@
           <th> </th>
           <th> </th>
         </tr>
+        <% @tasks.each do |task| %>
         <tr>
-         <% @tasks.each do |task| %>
             <td><%= task.id %></td>
             <td> <a href="/tasks/<%= task.id %>"><%= task.title %></a></td>
             <td> <a href="/tasks/<%= task.id %>/edit">Edit</a></td>
