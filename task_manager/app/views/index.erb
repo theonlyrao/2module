@@ -7,11 +7,20 @@
         <tr>
           <th>Task ID</th>
           <th>Task Title</th>
+          <th> </th>
+          <th> </th>
         </tr>
+        <% @tasks.each do |task| %>
         <tr>
-         <% @tasks.each do |task| %>
-            <td><%= task.id %>:</td>
+            <td><%= task.id %></td>
             <td> <a href="/tasks/<%= task.id %>"><%= task.title %></a></td>
+            <td> <a href="/tasks/<%= task.id %>/edit">Edit</a></td>
+            <td>
+              <form action="/tasks/<%= task.id %>" method="post">
+                <input type="hidden" name="_method" value="delete">
+                <input type="submit" value="Delete">
+              </form>
+            </td>
         </tr>
        <% end %>
      </table>

@@ -1,9 +1,18 @@
 ---
 tasks:
 - id: 1
-  title: first task
-  description: first description
-- id: 2
-  title: second task
-  description: second description
-total: 2
+  title: first task has been edited
+  description: edited
+- id: 4
+  title: class test
+  description: class test description
+- id: 5
+  title: ''
+  description: ''
+- id: 6
+  title: original title
+  description: original description
+- id: 7
+  title: Original Title
+  description: Original description.
+total: 7
