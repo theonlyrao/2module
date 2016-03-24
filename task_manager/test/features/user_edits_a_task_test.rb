@@ -29,7 +29,7 @@ class UserEditsATaskTest < Minitest::Test
     # user inputs new task information into edit form
     fill_in("task[title]", :with => "Updated Title")
     fill_in("task[description]", :with => "Updated Description" )
-
+    
     # user clicks submit to register the changes
     click_on("Update Task")
 
